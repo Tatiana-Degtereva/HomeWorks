@@ -1,5 +1,5 @@
-task = 12
-hour = 1.5
-name = 'Python'
-time = hour/task
-print('Курс:',name,', всего задач:', task, ', затрачено часов:', hour, ', среднее время выполнения ', time,' часа.')
+completed_homework = 12
+hours_spent = 1.5
+Course_name = 'Python'
+Time_for_one_task = hours_spent/completed_homework
+print('Курс:', Course_name, ', всего задач:', completed_homework, ', затрачено часов:', hours_spent, ', среднее время выполнения ', Time_for_one_task,' часа.')
