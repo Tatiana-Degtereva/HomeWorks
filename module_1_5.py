@@ -15,9 +15,9 @@ immutable_var = tuple([1, 2.5, True, "привет", [1,2,3]])
 print(immutable_var)
 # immutable_var[2] = False  TypeError: 'tuple' object does not support item assignment
 # При изменении элемента возникает ошибка, т.к. кортеж - неизменяемый
+
 mutable_list = [1000, 2.56789, False, "пока", [100,200,300]]
 print(mutable_list)
-
 mutable_list.append("end")
 mutable_list.extend('987')
 mutable_list.remove(1000)
