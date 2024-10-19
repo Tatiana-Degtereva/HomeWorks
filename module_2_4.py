@@ -9,16 +9,18 @@
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 primes = []
 not_primes = []
-for i in range(len(numbers)):
-    if numbers[i] == 1:
+for i in range(len(numbers)): # определяется количество элементов списка numbers
+    if numbers[i] == 1:  # каждый элемент списка numbers сравнивается с 1, чтобы исключить 1 из всех списков
         continue
     else:
-        for j in range(2,numbers[i]):
-            if numbers[i] % j == 0:
-                not_primes.append(numbers[i])
+        for j in range(2,numbers[i]): #для каждого элемента списка numbers определяются числа,
+                                     # деление на которые нужно проверить(с2 до самого себя (не включительно)
+            if numbers[i] % j == 0: # каждый элемент списка numbers делится на числа от 2 до самого себя (не включительно)
+                not_primes.append(numbers[i]) #если деление без остатка возможно, это не простое число,
+                                                # добавляем в список not_primes
                 break
         else:
-            primes.append(numbers[i])
+            primes.append(numbers[i])#если деление без остатка невозможно, это простое число, добавляем в список primes
             continue
 print(primes)
 print(not_primes)
