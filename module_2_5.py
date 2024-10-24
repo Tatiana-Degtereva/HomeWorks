@@ -8,11 +8,18 @@
 def get_matrix(n, m, value):
     matrix = []
     for i in range (0, n):
-        matrix.append([])
+        if n <= 0 or m <=0: break
+        else:
+            matrix.append([])
         for j in range(0, m):
             matrix[i].append(value)
-    print(matrix)
+    return matrix
 
-result = get_matrix(5, 3, 27)
+result1 = get_matrix(2, 3, 23)
+result2 = get_matrix(4, 0, 40)
+result3 = get_matrix(-1, 2, 12)
+print(result1)
+print(result2)
+print(result3)
 
 
