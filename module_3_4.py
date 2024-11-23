@@ -11,7 +11,7 @@ def single_root_words(root_word, *other_words):
     root_word_lower=root_word.lower()
     for i in other_words:
         i_lower=i.lower()
-        if i_lower.find(root_word_lower) == -1 and root_word_lower.find(i_lower) == -1:
+        if i_lower.count(root_word_lower) == False and root_word_lower in i_lower == False:
             continue
         else:
             same_words.append(i)
