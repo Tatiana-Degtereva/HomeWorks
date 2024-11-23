@@ -8,7 +8,7 @@
 # В true_math создайте функцию divide, которая принимает два параметра first и second. Функция должна возвращать результат деления first на second, но когда в second записан 0 - возвращать бесконечность.
 # Бесконечность можно импортировать из встроенной библиотеки math (from math import inf)
 
-from pythonProject.fake_math import divide as fake_divide
+from fake_math import divide as fake_divide
 from true_math import divide as true_divide
 
 result1 = fake_divide(69, 3)
