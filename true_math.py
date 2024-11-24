@@ -1,3 +1,4 @@
+# Домашняя работа по уроку "Модули и пакеты" module_4_1
 from math import inf
 
 def divide (first, second):
