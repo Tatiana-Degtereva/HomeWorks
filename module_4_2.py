@@ -15,4 +15,4 @@ def test_function():
 
 test_function()
 # inner_function() возникает ошибка 'NameError: name 'inner_function' is not defined. Did you mean: 'test_function
-# .к.вложенная фeнкция не работает в глобальном пространстве имен.
+# т.к.вложенная фeнкция не работает в глобальном пространстве имен.
